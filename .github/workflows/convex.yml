@@ -13,7 +13,7 @@ jobs:
           sudo n 20
           node -v
       - name: Install dependencies
-        run: npm install
+        run: npm install --force
       - name: Deploy Convex
         run: npx convex deploy --yes
         env:
